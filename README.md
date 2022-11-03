@@ -1,5 +1,6 @@
 # stable-diffusion-without-gpu
 
+[日本語版](README_ja.md)
 ## INSTALL
 
 For Windows, we recommend using Ubuntu on WSL2.

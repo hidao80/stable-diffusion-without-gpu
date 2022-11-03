@@ -1,5 +1,6 @@
 # stable-diffusion-without-gpu
 
+[English version](README.md)
 ## インストール
 
 Windowsの場合はWSL2上でUbuntuを利用することをお勧めします。
