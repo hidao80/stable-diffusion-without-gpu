@@ -1,8 +1,14 @@
 FROM pytorch/pytorch:latest
-#FROM rocm/pytorch:latest
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git
 
 RUN pip3 install --upgrade diffusers transformers scipy
-# ftfy python-slugify
-#RUN pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/rocm5.1.1
-#RUN pip3 install transformers==4.19.2 scann kornia==0.6.4 torchmetrics==0.6.0
 
+WORKDIR /app
+ARG HUGGING_FACE_TOKEN
+RUN git clone https://github.com/CompVis/stable-diffusion.git /app/stable-diffusion
+ADD draw.py /app/stable-diffusion/draw.py
+RUN sed -i -e "s/HUGGING_FACE_TOKEN/${HUGGING_FACE_TOKEN}/" /app/stable-diffusion/draw.py
+
+WORKDIR /app/stable-diffusion

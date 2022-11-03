@@ -1,0 +1,12 @@
+version: "3"
+services:
+  stable-diffusion:
+    build:
+      context: .
+      args:
+        # Replace the "YOUR_TOKEN" string with your hugging face token.
+        HUGGING_FACE_TOKEN: "YOUR_TOKEN"
+    volumes:
+      - ./files:/files
+      - .cache/huggingface:/root/.cache/huggingface
+    tty: true
