@@ -29,4 +29,4 @@ Windowsの場合はWSL2上でUbuntuを利用することをお勧めします。
     $ ./generate.sh "green apple"
     ```
 
-3. `stable-diffusion-without-gpu/files/output.png`に画像がが生成されます。
+3. `stable-diffusion-without-gpu/files/stable_diffusion_spell.png`に画像がが生成されます。
