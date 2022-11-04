@@ -29,4 +29,4 @@ For Windows, we recommend using Ubuntu on WSL2.
     $ ./generate.sh "green apple"
     ```
 
-3. An image will be generated in `stable-diffusion-without-gpu/files/output.png`.
+3. An image will be generated in `stable-diffusion-without-gpu/files/stable_diffusion_spell.png`.
