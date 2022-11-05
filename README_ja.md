@@ -35,7 +35,7 @@ Windowsの場合はWSL2上でUbuntuを利用することをオススメします
     ```
 
 3. `stable-diffusion-without-gpu/files/stable_diffusion_spell_now.png`に画像がが生成されます。
-4. 終了するときは`Docker`コンテナーを止めましょう。次のコマンドを`docker-compose up --build -d`舌ディレクトリ内で実行します。
+4. 終了するときは`Docker`コンテナーを止めましょう。次のコマンドを`docker-compose up --build -d`したディレクトリ内で実行します。
 
     ```sh
     $ docker-compose down
