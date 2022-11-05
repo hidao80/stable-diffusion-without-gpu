@@ -36,7 +36,7 @@ For Windows, we recommend using Ubuntu on WSL2.
     ```
 
 3. An image will be generated in `stable-diffusion-without-gpu/files/stable_diffusion_spell.png`.
-4. Stop the `Docker` container when you are finished. Run the following command in the `docker-compose up --build -d` tongue directory.
+4. When you are finished, stop the Docker container. Execute the following command in the directory `docker-compose up --build -d`
 
     ```sh
     $ docker-compose down
