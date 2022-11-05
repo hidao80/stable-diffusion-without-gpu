@@ -3,7 +3,7 @@ FROM pytorch/pytorch:latest
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git
 
-RUN pip3 install --upgrade diffusers transformers scipy
+RUN pip3 install --upgrade diffusers transformers scipy accelerate
 
 WORKDIR /app
 ARG HUGGING_FACE_TOKEN
