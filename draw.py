@@ -1,9 +1,7 @@
 #!/opt/conda/bin/python
 
 import sys
-import torch
 from diffusers import StableDiffusionPipeline, StableDiffusionImg2ImgPipeline
-from torch import autocast
 from PIL import Image
 
 MODEL_ID = "CompVis/stable-diffusion-v1-4"
@@ -18,7 +16,7 @@ timestamp = sys.argv[1]
 prompt = sys.argv[2]
 sentence = prompt.replace(' ','_')
 
-outputFileName = '/files/' + sentence + '_' + timestamp + '.png'
+outputFileName = '/files/' + sentence[:50] + '_' + timestamp + '.png'
 
 if len(sys.argv) == 3:
     pipe = StableDiffusionPipeline.from_pretrained(
