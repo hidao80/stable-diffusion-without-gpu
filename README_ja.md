@@ -19,7 +19,7 @@ Windowsの場合はWSL2上でUbuntuを利用することをオススメします
 
     ```sh
     $ cd stable-diffusion-without-gpu
-    $ docker-compose up --build -d
+    $ docker-compose up -d
     ```
 
 2. 続けてターミナルに次のコマンドを入力すると、画像を作成します。  

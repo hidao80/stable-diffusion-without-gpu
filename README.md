@@ -20,7 +20,7 @@ For Windows, we recommend using Ubuntu on WSL2.
 
     ```sh
     $ cd stable-diffusion-without-gpu
-    $ docker-compose up --build -d
+    $ docker-compose up -d
     ```
 
 2. Continue to type the following command in the terminal to create the image.  
